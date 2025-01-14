@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4e916b66-c2a4-491b-8eea-82a9bda78f53">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from tweets]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="konten" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_dibuat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impresi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="suka" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="207" y="12" width="173" height="32" uuid="eda561f6-567f-4a3c-a32b-7ff298b26813"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN TWETS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="23" y="2" width="100" height="20" uuid="1824d26a-3682-4a87-a2ca-257eb916de93"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="2" width="100" height="20" uuid="7d5cc067-e5f9-480f-854a-c1b906934f62"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[konten]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="2" width="100" height="20" uuid="f04e8052-1b5d-47bc-8d18-7745c838babc"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[tanggal_dibuat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="2" width="100" height="20" uuid="7f0e60b5-91bc-4118-a31c-18ba8194fac3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[impresi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="2" width="100" height="20" uuid="8c3caff4-b784-404b-a8b8-ae311bb88a4c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[suka]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="23" y="39" width="100" height="20" uuid="7f5567f8-93f5-425c-9315-260ea515df53"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="40" width="100" height="20" uuid="5e2e2ee7-ca67-4bb7-a7cf-f4af003389a6"/>
+				<textFieldExpression><![CDATA[$F{konten}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="39" width="100" height="20" uuid="861fd9fd-6217-4fd4-84db-6d0cb08c7ccf"/>
+				<textFieldExpression><![CDATA[$F{tanggal_dibuat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="42" width="100" height="20" uuid="3be2648e-b5dd-4948-aaf1-9be03fe238f8"/>
+				<textFieldExpression><![CDATA[$F{impresi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="43" width="100" height="20" uuid="4e01b701-8cc2-4e2c-933e-f604fbdc64e2"/>
+				<textFieldExpression><![CDATA[$F{suka}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

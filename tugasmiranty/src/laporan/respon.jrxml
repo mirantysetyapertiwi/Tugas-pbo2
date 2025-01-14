@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4c433cb9-8280-4378-a5d2-cd2a072345ed">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from responses]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_akun" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_tanggapan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_tanggapan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="16" width="221" height="23" uuid="104a3716-0393-4718-8bd9-ba93a130649d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN RESPONSES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="24" y="2" width="100" height="20" uuid="c754681d-738f-4c29-bb55-5fd3d8fc1b60"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="2" width="100" height="20" uuid="e0819e38-77e2-4936-8e74-d4b20e63c7e4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[nama_akun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="246" y="2" width="100" height="20" uuid="cd99daa4-fb93-4459-b900-994a405fa9c7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[jenis_tanggapan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="2" width="100" height="20" uuid="ea757c6e-067f-485f-8c50-a20195642e18"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[jumlah_tanggapan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="24" y="30" width="100" height="20" uuid="b33e9c30-5213-44a8-816a-39f4f071aded"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="30" width="100" height="20" uuid="6354874e-1636-4f88-96da-5a436c3cf02d"/>
+				<textFieldExpression><![CDATA[$F{nama_akun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="30" width="100" height="20" uuid="aecd3da8-85cf-41af-a8c4-6be9b6bc70b2"/>
+				<textFieldExpression><![CDATA[$F{jenis_tanggapan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="38" width="126" height="20" uuid="6d396552-8b26-4194-bae3-731bd673a9aa"/>
+				<textFieldExpression><![CDATA[$F{jumlah_tanggapan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
